@@ -17,10 +17,9 @@ public class fibonacci {
 			c=a+b;
 			a=b;
 			b=c;
-			if(c<=90)
-			{
+			
 			System.out.print(c+" ");
-            }
+            
 		}
 
 	}
