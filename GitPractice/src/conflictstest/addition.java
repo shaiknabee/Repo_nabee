@@ -6,7 +6,9 @@ public class addition
 	{
 
 
+
        int a=30,b=40,c,d=5;
+
 
        c=a+d;
        
