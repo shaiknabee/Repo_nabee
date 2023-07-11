@@ -7,7 +7,7 @@ public class addition
 
 
 
-       int a=30,b=40,c,d=5;
+       int a=800,b=40,c,d=5;
 
 
        c=a+d;
