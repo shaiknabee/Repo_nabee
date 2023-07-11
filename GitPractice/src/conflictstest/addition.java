@@ -8,5 +8,8 @@ public class addition
        c=x+d;
        
        System.out.println("add is "+c);
+       c=a-b;
+       System.out.println("sub is "+c);
+      
 	}
 }
