@@ -4,8 +4,8 @@ public class addition
 {
 	public static void main(String[] args) 
 	{
-       int a=10,b=20,c;
-       c=a+b;
+       int x=30,y=40,c;
+       c=x+y;
        System.out.println("add is "+c);
 	}
 }
