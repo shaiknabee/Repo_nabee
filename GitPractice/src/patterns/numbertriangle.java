@@ -3,18 +3,19 @@ package patterns;
 public class numbertriangle {
 	public static void main(String[]args)
 	{
-		int n=4 ,count=0;
+		int n=5,count=n;
 		for(int i=1;i<=n;i++)
 		{
-			for(int sp=3;sp>=i-1;sp--)
+			for(int sp=1;sp<=i-1;sp++)
 			{
 				System.out.print(" ");
 			}
-			for(int j=1;j<=i;j++)
+			for(int j=5;j>=i;j--)
 			{
-				count=count+1;
-				System.out.print(count+" ");
+
+				System.out.print(count);
 			}
+			count--;
 			System.out.println();
 		}
 	}
