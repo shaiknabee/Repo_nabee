@@ -11,25 +11,25 @@ public class gcd
 		System.out.println("Enter second number");
 		int n2=sc.nextInt();
 		List<Integer>m=new ArrayList<>();
+		int  gcd=0;
 		for(int i=1;i<n1;i++)
-		{
-			int max=0,min=0;
+		{			
 			for(int j=1;j<n2;j++)
 			{
 				if((n1%i==0)&&(n2%j==0))
 				{
 					if(i==j)
 					{
-	                   
-	                   m.add(i);
-					}
-
-				}
-			
-			}
-			
+	                  if(i>gcd)
+	                  {
+	                	  gcd=i;
+	                  }
+	                }
+				}			
+			}			
 		}
-		System.out.println("GCD of "+n1+" & "+n2+" is "+Collections.max(m));
+		System.out.println("GCD of "+n1+" & "+n2+" is "+gcd);
 	}
 
 }
+
