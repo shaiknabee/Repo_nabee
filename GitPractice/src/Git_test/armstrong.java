@@ -35,7 +35,7 @@ public class armstrong
 				
 			}
 			
-		
+			sc.close();
 		
 	}
 
