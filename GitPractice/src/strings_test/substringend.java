@@ -1,5 +1,5 @@
 package strings_test;
-import java.util.Scanner;
+import java.util.Scanner;															
 public class substringend {
 	public static void main(String[]args)
 	{

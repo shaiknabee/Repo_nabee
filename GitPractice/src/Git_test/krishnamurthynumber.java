@@ -4,7 +4,7 @@ import java.util.Scanner;
 //krishnamurthy number is a number you get by adding sum of factorial of its digits...
 //if n=145, 1!+4!+5!=145 so 145 is krishnamurthy number
 
-public class test
+public class krishnamurthynumber
 {
 	public static void main(String[] args) 
 	{
