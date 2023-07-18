@@ -12,9 +12,9 @@ public class gcd
 		int n2=sc.nextInt();
 		List<Integer>m=new ArrayList<>();
 		int  gcd=0;
-		for(int i=1;i<n1;i++)
+		for(int i=1;i<=n1;i++)
 		{			
-			for(int j=1;j<n2;j++)
+			for(int j=1;j<=n2;j++)
 			{
 				if((n1%i==0)&&(n2%j==0))
 				{
