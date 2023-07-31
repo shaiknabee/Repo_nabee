@@ -32,6 +32,34 @@ public class orangehrm {
 		WebElement ele_login=d.findElement(by_login);
 		ele_login.click();
 		Thread.sleep(3000);
+		
+		By by_info=By.xpath("//span[text()='My Info']");
+		WebElement ele_info=d.findElement(by_info);
+		ele_info.click();
+		Thread.sleep(3000);
+		
+		By by_fname=By.xpath("//input[@class='oxd-input oxd-input--active orangehrm-firstname']");
+		WebElement ele_fname=d.findElement(by_fname);
+		ele_fname.clear();
+		ele_fname.sendKeys("Nabee");
+		Thread.sleep(1000);
+		
+		By by_lname=By.xpath("//input[@class='oxd-input oxd-input--active orangehrm-lastname']");
+		WebElement ele_lname=d.findElement(by_lname);
+		ele_lname.clear();
+		ele_lname.sendKeys("Shaik");
+		Thread.sleep(1000);
+		
+     	By by_nname=By.xpath("(//input[@class='oxd-input oxd-input--active'])[2]");
+		WebElement ele_nname=d.findElement(by_nname);
+		ele_nname.sendKeys("Nab");
+		Thread.sleep(1000);   
+
+		By by_eid=By.xpath("(//input[@class='oxd-input oxd-input--active'])[3]");
+		WebElement ele_eid=d.findElement(by_eid);
+		ele_eid.clear();
+		//ele_eid.sendKeys("ZTOH0046");
+		Thread.sleep(1000);   
 
 		
 		
