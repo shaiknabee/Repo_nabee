@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+//code not working
 public class w3schools 
 {
 	public static void main(String[] args) throws InterruptedException
@@ -36,13 +36,37 @@ public class w3schools
        ele_loginbutton.click();
        Thread.sleep(3000);
        
-       By by_home=By.xpath("/html/body/div[1]/a[1]/i");
-       WebElement ele_home=d.findElement(by_home);
-       ele_home.click();
-       Thread.sleep(3000);
+       By by_browse=By.xpath("//button[text()='Browse all tutorials']");
+       WebElement ele_browse=d.findElement(by_browse);
+       ele_browse.click();
+       Thread.sleep(1000);
+       
+       By by_git=By.xpath("(//div[@class='TutorialCard_cardTitle__XFD04 card-title h5'])[11]");
+       WebElement ele_git=d.findElement(by_git);
+       ele_git.click();
+       Thread.sleep(1000);
+         
+       By by_branches=By.xpath("(//div[@class=\"chapter-text\"])[3]");
+       WebElement ele_branches=d.findElement(by_branches);
+       ele_branches.click();
+       Thread.sleep(1000); 
+       
+     //span[text()="Lesson 3.2"]
+       By by_merge=By.xpath("//span[text()='Lesson 3.2']");
+       WebElement ele_merge=d.findElement(by_merge);
+       ele_merge.click();
+       Thread.sleep(1000); 
        
        
-//       By by_profile=By.xpath("//a[contains(@id,'profile-link')]");
+       
+       
+       
+       
+       
+       
+       
+    
+//       By by_profile=By.xpath("//div[@id='topnav']/a[4][text()='Profile']");
 //       WebElement ele_profile=d.findElement(by_profile);
 //       ele_profile.click();
 //       Thread.sleep(1000);
