@@ -55,13 +55,17 @@ public class orangehrm {
 		ele_nname.sendKeys("Nab");
 		Thread.sleep(1000);   
 
-		By by_eid=By.xpath("(//input[@class='oxd-input oxd-input--active'])[3]");
+		By by_eid=By.xpath("(//div[@class='oxd-input-group oxd-input-field-bottom-space'])[5]//div[2]//input");
 		WebElement ele_eid=d.findElement(by_eid);
 		ele_eid.clear();
-		//ele_eid.sendKeys("ZTOH0046");
+		ele_eid.sendKeys("ZTOH0046");
 		Thread.sleep(1000);   
 
-		
+		By by_dob=By.xpath("(//div[@class='oxd-date-wrapper'])[2]//div//input");
+		WebElement ele_dob=d.findElement(by_dob);
+		ele_eid.clear();
+		ele_dob.sendKeys("1997-04-06");
+		Thread.sleep(1000);
 		
 		By by_dropdown=By.xpath("//i[@class='oxd-icon bi-caret-down-fill oxd-userdropdown-icon']");
 		WebElement ele_dropdown=d.findElement(by_dropdown);
