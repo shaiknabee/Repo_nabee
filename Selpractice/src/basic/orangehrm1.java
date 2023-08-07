@@ -10,8 +10,8 @@ public class orangehrm1 {
 	{
 		WebDriver d=new ChromeDriver();
 		d.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-		
 		Thread.sleep(2000);
+		
 		d.manage().window().maximize();
 		Thread.sleep(1000);
 		
