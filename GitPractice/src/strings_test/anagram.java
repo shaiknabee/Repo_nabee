@@ -4,10 +4,10 @@ public class anagram
 {
 	public static void main(String[] args) 
 	{
-		
+
 		String str1="LISTEN";
 		char []arr1=str1.toCharArray();
-		String str2="SILENT";
+		String str2="SILENTY";
 		char []arr2=str2.toCharArray();
 		if(arr1.length==arr2.length)
 		{
@@ -38,7 +38,7 @@ public class anagram
 			int count=0;
 			for(int i=0;i<arr1.length;i++)
 			{
-				
+
 				if(arr1[i]==arr2[i])
 				{
 					count++;
@@ -52,13 +52,15 @@ public class anagram
 			{
 				System.out.println(str1+" is not an anagram to "+str2);
 			}
-				
-			
+
+
 		}
 
 		else
 		{
-																																																																																																																																					}
+			System.out.println("sizes are not equal,hence "+str1+" is not an anagram to "+str2);
+		}
+
 
 	}
 }

@@ -8,13 +8,22 @@ public class split {
 		String str=sc.nextLine();
 	    char arr[]=str.toCharArray();
 	    int count=1;
-	    for(int i=0;i<arr.length;i++)
-	    {
-	    	if(arr[i]==' ')
-	    	{
-	    			count++;
-            }
-	    }
+		for(int i=0;i<arr.length;i++)
+		{
+			if(arr[i]==' ')
+			{
+				if(!(i==0||i==arr.length-1))
+				{
+					count++;
+				}
+
+				if(arr[i+1]==' ')
+				{
+					count--;
+				}
+			}
+
+		}
 	    String arr1[]=new String[count];
 	    int index=0;
 	    String temp="";
@@ -23,7 +32,11 @@ public class split {
 	    	if(arr[i]==' ')
 	    	{
 	    		index++;
-	    		temp="";
+	    		temp="                                         ";
+	    		if(arr[i+1]==' ')
+		    	{
+		    		index--;		    		
+		    	}
 	    	}
 	    	else
 	    	{
@@ -35,6 +48,6 @@ public class split {
 	      {
 	        System.out.println(arr1[i]);
 	      }
-	    sc.close();
+	 
 	}
 }

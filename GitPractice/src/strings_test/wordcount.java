@@ -8,7 +8,6 @@ public class wordcount {
 		String str=sc.nextLine();
 		char arr[]=str.toCharArray();
 		int count=1;
-
 		for(int i=0;i<arr.length;i++)
 		{
 			if(arr[i]==' ')
@@ -17,15 +16,12 @@ public class wordcount {
 				{
 					count++;
 				}
-
 				if(arr[i+1]==' ')
 				{
 					count--;
 				}
 			}
-
 		}
-
 		System.out.println(count);
 		sc.close();
 	}
